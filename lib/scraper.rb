@@ -7,7 +7,7 @@ require 'csv'
 
 class ScrapeMp
   def parser
-     csv_file = open('../bc.csv')
+     csv_file = open('./../bc.csv')
      csvmp = CSV.read(csv_file)
      csvmp.shift
      csvmp.each do |mp|
